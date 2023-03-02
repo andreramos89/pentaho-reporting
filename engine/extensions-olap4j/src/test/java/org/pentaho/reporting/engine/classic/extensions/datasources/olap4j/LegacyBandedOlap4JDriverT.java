@@ -56,7 +56,7 @@ public class LegacyBandedOlap4JDriverT extends DataSourceTestBase {
     provider.setProperty( "JdbcUser", "sa" );
     provider.setProperty( "JdbcPassword", "" );
     provider.setProperty( "Jdbc", "jdbc:hsqldb:mem:SampleData" );
-    provider.setProperty( "JdbcDrivers", "org.hsqldb.jdbcDriver" );
+    provider.setProperty( "JdbcDrivers", "org.hsqldb.jdbc.jdbcDriver" );
     provider.setUrl( "jdbc:mondrian:" );
 
     final LegacyBandedMDXDataFactory dataFactory = new LegacyBandedMDXDataFactory( provider );

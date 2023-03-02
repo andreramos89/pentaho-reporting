@@ -52,12 +52,12 @@ public class JdbcConnectionDefinitionManager {
   private static final JdbcConnectionDefinition SAMPLE_DATA_JNDI_SOURCE = new JndiConnectionDefinition( "SampleData",
       "SampleData", "Hypersonic", null, null );
   private static final JdbcConnectionDefinition SAMPLE_DATA_DRIVER_SOURCE = new DriverConnectionDefinition(
-      "SampleData (Hypersonic)", "org.hsqldb.jdbcDriver", "jdbc:hsqldb:hsql://localhost:9001/sampledata",
+      "SampleData (Hypersonic)", "org.hsqldb.jdbc.jdbcDriver", "jdbc:hsqldb:hsql://localhost:9001/sampledata",
       "pentaho_user", "password" );
   private static final JdbcConnectionDefinition SAMPLE_DATA_MEMORY_SOURCE = new DriverConnectionDefinition(
-      "SampleData (Memory)", "org.hsqldb.jdbcDriver", "jdbc:hsqldb:mem:SampleData", "pentaho_user", "password" );
+      "SampleData (Memory)", "org.hsqldb.jdbc.jdbcDriver", "jdbc:hsqldb:mem:SampleData", "pentaho_user", "password" );
   private static final JdbcConnectionDefinition LOCAL_SAMPLE_DATA_DRIVER_SOURCE = new DriverConnectionDefinition(
-      "SampleData (Local)", "org.hsqldb.jdbcDriver", "jdbc:hsqldb:./resources/sampledata/sampledata", "pentaho_user",
+      "SampleData (Local)", "org.hsqldb.jdbc.jdbcDriver", "jdbc:hsqldb:./resources/sampledata/sampledata", "pentaho_user",
       "password" );
   private static final JdbcConnectionDefinition MYSQL_SAMPLE_DATA_DRIVER_SOURCE = new DriverConnectionDefinition(
       "SampleData (MySQL)", "com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/sampledata", "pentaho_user",

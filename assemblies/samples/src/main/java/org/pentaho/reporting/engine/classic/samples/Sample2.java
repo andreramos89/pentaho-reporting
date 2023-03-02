@@ -65,7 +65,7 @@ public class Sample2 extends AbstractReportGenerator {
    */
   public DataFactory getDataFactory() {
     final DriverConnectionProvider sampleDriverConnectionProvider = new DriverConnectionProvider();
-    sampleDriverConnectionProvider.setDriver( "org.hsqldb.jdbcDriver" );
+    sampleDriverConnectionProvider.setDriver( "org.hsqldb.jdbc.jdbcDriver" );
     sampleDriverConnectionProvider.setUrl( "jdbc:hsqldb:./sql/sampledata" );
     sampleDriverConnectionProvider.setProperty( "user", "sa" );
     sampleDriverConnectionProvider.setProperty( "password", "" );

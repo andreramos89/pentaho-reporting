@@ -15,7 +15,7 @@
     <data:sql-datasource xmlns:data="http://jfreereport.sourceforge.net/namespaces/datasources/sql">
       <data:config label-mapping="true"/>
       <data:connection>
-        <data:driver>org.hsqldb.jdbcDriver</data:driver>
+        <data:driver>org.hsqldb.jdbc.jdbcDriver</data:driver>
         <data:url>jdbc:hsqldb:mem:SampleData</data:url>
         <data:properties>
           <data:property name="user">sa</data:property>

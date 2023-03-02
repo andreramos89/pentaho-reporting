@@ -37,7 +37,7 @@ public class SqlDataFactoryDriverIT extends DataSourceTestBase {
 
   public void testMetaDataDrc() {
     final DriverConnectionProvider drc = new DriverConnectionProvider();
-    drc.setDriver( "org.hsqldb.jdbcDriver" );
+    drc.setDriver( "org.hsqldb.jdbc.jdbcDriver" );
     drc.setUrl( "jdbc:hsqldb:mem:SampleData" );
     drc.setProperty( "user", "sa" );
     drc.setProperty( "password", "" );
@@ -65,7 +65,7 @@ public class SqlDataFactoryDriverIT extends DataSourceTestBase {
     assertEquals( "Physical Queries match, so queries are considered the same", qh1, qh2 );
 
     final DriverConnectionProvider drc2 = new DriverConnectionProvider();
-    drc.setDriver( "org.hsqldb.jdbcDriver" );
+    drc.setDriver( "org.hsqldb.jdbc.jdbcDriver" );
     drc.setUrl( "jdbc:hsqldb:mem:SampleData2" );
     drc.setProperty( "user", "sa" );
     drc.setProperty( "password", "" );
@@ -83,7 +83,7 @@ public class SqlDataFactoryDriverIT extends DataSourceTestBase {
 
   public void testParameterMetadata() throws ReportDataFactoryException {
     final DriverConnectionProvider drc = new DriverConnectionProvider();
-    drc.setDriver( "org.hsqldb.jdbcDriver" );
+    drc.setDriver( "org.hsqldb.jdbc.jdbcDriver" );
     drc.setUrl( "jdbc:hsqldb:mem:SampleData" );
     drc.setProperty( "user", "sa" );
     drc.setProperty( "password", "" );
@@ -125,7 +125,7 @@ public class SqlDataFactoryDriverIT extends DataSourceTestBase {
 
   protected DataFactory createDataFactory( final String query ) {
     final DriverConnectionProvider drc = new DriverConnectionProvider();
-    drc.setDriver( "org.hsqldb.jdbcDriver" );
+    drc.setDriver( "org.hsqldb.jdbc.jdbcDriver" );
     drc.setUrl( "jdbc:hsqldb:mem:SampleData" );
     drc.setProperty( "user", "sa" );
     drc.setProperty( "password", "" );

@@ -58,7 +58,7 @@ public class EmptyCellsetTest extends TestCase {
 
   protected DataFactory createDataFactory( final String query ) throws ReportDataFactoryException {
     final DriverDataSourceProvider provider = new DriverDataSourceProvider();
-    provider.setDriver( "org.hsqldb.jdbcDriver" );
+    provider.setDriver( "org.hsqldb.jdbc.jdbcDriver" );
     provider.setUrl( "jdbc:hsqldb:mem:SampleData" );
 
     final BandedMDXDataFactory mondrianDataFactory = new BandedMDXDataFactory();

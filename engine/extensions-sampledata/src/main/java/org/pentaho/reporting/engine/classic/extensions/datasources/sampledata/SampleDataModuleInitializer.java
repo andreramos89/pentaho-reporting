@@ -51,7 +51,7 @@ public class SampleDataModuleInitializer implements ModuleInitializer {
   public void performInit() throws ModuleInitializeException {
     try {
       Driver driver = ObjectUtilities.loadAndInstantiate
-        ( "org.hsqldb.jdbcDriver", SampleDataModuleInitializer.class, Driver.class );
+        ( "org.hsqldb.jdbc.jdbcDriver", SampleDataModuleInitializer.class, Driver.class );
       populateDatabase( driver );
     } catch ( Exception e ) {
       throw new ModuleInitializeException( "Failed to load the HSQL-DB driver", e );

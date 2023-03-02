@@ -64,7 +64,7 @@ public class AutoTableAPIDemo extends AbstractDemoHandler
   public MasterReport createReport() throws ReportDefinitionException
   {
     final DriverConnectionProvider drc = new DriverConnectionProvider();
-    drc.setDriver("org.hsqldb.jdbcDriver");
+    drc.setDriver("org.hsqldb.jdbc.jdbcDriver");
     drc.setUrl("jdbc:hsqldb:./sql/sampledata");
     drc.setProperty("user", "sa");
     drc.setProperty("password", "");

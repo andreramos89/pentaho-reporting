@@ -37,7 +37,7 @@ public class SampleDataFactory extends SQLReportDataFactory {
 
   private static ConnectionProvider createDefaultProvider() {
     final DriverConnectionProvider drc = new DriverConnectionProvider();
-    drc.setDriver( "org.hsqldb.jdbcDriver" );
+    drc.setDriver( "org.hsqldb.jdbc.jdbcDriver" );
     drc.setUrl( "jdbc:hsqldb:mem:SampleData" );
     drc.setProperty( "user", "sa" );
     drc.setProperty( "password", "" );

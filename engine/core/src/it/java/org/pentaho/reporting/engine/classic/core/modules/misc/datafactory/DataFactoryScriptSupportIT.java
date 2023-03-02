@@ -160,7 +160,7 @@ public class DataFactoryScriptSupportIT extends TestCase {
   public void testPostProcessResult() throws ReportDataFactoryException {
     final DriverConnectionProvider driverConnectionProvider = new DriverConnectionProvider();
 
-    driverConnectionProvider.setDriver( "org.hsqldb.jdbcDriver" );
+    driverConnectionProvider.setDriver( "org.hsqldb.jdbc.jdbcDriver" );
     driverConnectionProvider.setUrl( "jdbc:hsqldb:mem:SampleData" );
     driverConnectionProvider.setProperty( "user", "sa" );
     driverConnectionProvider.setProperty( "password", "" );

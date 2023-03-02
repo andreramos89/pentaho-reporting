@@ -63,7 +63,7 @@ public class MondrianMetaDataTest extends TestCase {
     dcp.setProperty( "JdbcUser", "sa" );
     dcp.setProperty( "JdbcPassword", "" );
     dcp.setProperty( "Jdbc", "jdbc:hsqldb:mem:SampleData" );
-    dcp.setProperty( "JdbcDrivers", "org.hsqldb.jdbcDriver" );
+    dcp.setProperty( "JdbcDrivers", "org.hsqldb.jdbc.jdbcDriver" );
     dcp.setUrl( "jdbc:mondrian:" );
     return dcp;
   }

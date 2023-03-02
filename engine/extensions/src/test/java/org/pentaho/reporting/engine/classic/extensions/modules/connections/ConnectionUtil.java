@@ -28,7 +28,7 @@ import org.pentaho.reporting.libraries.base.boot.ObjectFactory;
 public class ConnectionUtil {
 
   public static final String CONNECTION_NAME = "Memory";
-  public static final String DRIVER_CLASS = "org.hsqldb.jdbcDriver";
+  public static final String DRIVER_CLASS = "org.hsqldb.jdbc.jdbcDriver";
   public static final String CON_URL = "jdbc:hsqldb:mem:SampleData";
   public static final String USER_NAME = "pentaho_user";
   public static final String USER_PASSWORD = "password";

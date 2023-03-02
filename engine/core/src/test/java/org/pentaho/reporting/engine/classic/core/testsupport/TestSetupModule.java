@@ -61,7 +61,7 @@ public class TestSetupModule extends AbstractModule {
     }
 
     try {
-      Driver driver = ObjectUtilities.loadAndInstantiate( "org.hsqldb.jdbcDriver", TestSetupModule.class, Driver.class );
+      Driver driver = ObjectUtilities.loadAndInstantiate( "org.hsqldb.jdbc.jdbcDriver", TestSetupModule.class, Driver.class );
       populateDatabase( driver );
     } catch ( Exception e ) {
       throw new ModuleInitializeException( "Failed to load the HSQL-DB driver", e );

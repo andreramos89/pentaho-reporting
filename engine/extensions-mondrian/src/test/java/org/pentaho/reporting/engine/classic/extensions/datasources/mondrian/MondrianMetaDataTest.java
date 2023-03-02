@@ -56,7 +56,7 @@ public class MondrianMetaDataTest extends TestCase {
 
   public void testMetaData() throws ReportDataFactoryException {
     final DriverDataSourceProvider provider = new DriverDataSourceProvider();
-    provider.setDriver( "org.hsqldb.jdbcDriver" );
+    provider.setDriver( "org.hsqldb.jdbc.jdbcDriver" );
     provider.setUrl( "jdbc:hsqldb:mem:SampleData" );
 
     final BandedMDXDataFactory mondrianDataFactory = new BandedMDXDataFactory();
@@ -107,7 +107,7 @@ public class MondrianMetaDataTest extends TestCase {
 
   public void testParameter() throws ReportDataFactoryException {
     final DriverDataSourceProvider provider = new DriverDataSourceProvider();
-    provider.setDriver( "org.hsqldb.jdbcDriver" );
+    provider.setDriver( "org.hsqldb.jdbc.jdbcDriver" );
     provider.setUrl( "jdbc:hsqldb:mem:SampleData" );
 
     final BandedMDXDataFactory mondrianDataFactory = new BandedMDXDataFactory();

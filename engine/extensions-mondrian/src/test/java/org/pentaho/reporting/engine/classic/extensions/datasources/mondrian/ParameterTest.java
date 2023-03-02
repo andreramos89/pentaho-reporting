@@ -59,7 +59,7 @@ public class ParameterTest extends TestCase {
     String query = "SELECT STRTOMEMBER(\"[Product].[All Products].[Classic Cars]\") ON 0 FROM [SteelWheelsSales]";
     final BandedMDXDataFactory mondrianDataFactory = new BandedMDXDataFactory();
     final DriverDataSourceProvider provider = new DriverDataSourceProvider();
-    provider.setDriver( "org.hsqldb.jdbcDriver" );
+    provider.setDriver( "org.hsqldb.jdbc.jdbcDriver" );
     provider.setUrl( "jdbc:hsqldb:mem:SampleData" );
     mondrianDataFactory.setCubeFileProvider( new DefaultCubeFileProvider
       ( "src/test/resources/org/pentaho/reporting/engine/classic/extensions/datasources/mondrian/steelwheels.mondrian.xml" ) );
